@@ -3,7 +3,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  border: 1px solid pink;
+
 
 
 }
@@ -42,6 +42,10 @@ p{
   font-family: didact gothic;
 }
 
+.logo img {
+  width: 100px;
+}
+
 
 a{
   font-family: didact gothic;
@@ -55,13 +59,6 @@ nav{
 
 }
 
-.logo{
-  min-height:5vh;
-}
-
-nav a{
-
-}
 
 button{
 
@@ -104,7 +101,6 @@ header,h1{
 
 .featured-right{
   height: 25vh;
-  background-image:url("../images/querida-perdiz.jpg");
   background-size: cover;
   background-position: center;
   margin-bottom:1%;
@@ -130,8 +126,9 @@ header,h1{
 
 /*PAGE FILM*/
 
-h1 .video-project{
+.video-project{
   font-size: 140%;
+  padding-left: 5rem;
 }
 
 .filmtop{
@@ -145,11 +142,13 @@ h1 .video-project{
 .videomain{
   background-color: black;
 }
+
 .videomain iframe{
   margin: 0.5% auto;
   display: block;
-
 }
+
+
 
 
 
@@ -201,18 +200,30 @@ h1 .video-project{
 /*FOOTER*/
 .footer{
   background-color: #89ffde;
-  padding: 2% 0 0 0;
+  padding-left: 1%;
+  padding-top: .4rem;
 }
+
 .footer a, i{
   color: #9052fd;
   text-decoration: none;
 }
+.contact{
+  text-align: center;
+  padding-top: .4rem;
+}
 .footer i{
   font-size: 32px;
   text-align: right;
+  padding-right: .5rem;
 }
+
 .footer a:hover{
   font-weight: bold;
   color: orange;
   transition: 2s;
+}
+
+.aboutfooter{
+
 }

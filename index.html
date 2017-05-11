@@ -3,8 +3,13 @@ layout: default
 
 featured:
   - title: Perdiz Magazine
-    Author: Querida Estudio
-    Description: The new issue is full of incredible stories, photography, and characters.
+    author: Querida Estudio
+    description: The new issue is full of incredible stories, photography, and characters.
+    link: ../images/querida-perdiz.jpg
+  - title: Bone Jelly
+    author: Sharmila Banerjee
+    description: One panel of the comic strip for the comic series 'Girlie'.
+    link: ../images/sharmila.jpg
 ---
   <!-- HEADER -->
   <header class="home">
@@ -39,27 +44,27 @@ featured:
       <div class="col-12">
         <h2>Latest aditions</h2>
       </div>
-      <div class="featured-right col-6">
-      </div>
-        {%  for thing in page.featured %}
-          <div class="box2 col-6">
-            <h3>{{thing.name}}</h3>
-            <h4>by {{thing.author}}</h4>
-            <p>{{thing.description}}
-            </p>
-          </div>
+      {%  for thing in page.featured %}
+        <div class="featured-right col-6" style="background-image: url({{thing.link}});">
+        </div>
+
+        <div class="box2 col-6">
+          <h3>{{thing.title}}</h3>
+          <h4>by {{thing.author}}</h4>
+          <p>{{thing.description}}
+          </p>
+        </div>
         {% endfor %}
       <!--
       <!-- RIGHT SECOND BOX -->
-      <div class="home-box1 col-6">
+      <!-- <div class="home-box1 col-6">
       </div>
 
       <div class="home-box2 col-6">
         <h3>Bone Jelly</h3>
         <h4>by Sharmila Banerjee</h4>
-        <p>One panel of the comic strip for the comic series 'Girlie'.
-        </p>
-      </div>
+        <p> </p>
+      </div> -->
 
     </div>
   </section>

@@ -5,7 +5,7 @@ layout: default
 <h2 class="filmtop">Film</h2>
 <!-- VIDEO MAIN -->
 <section class="videomain">
-  <iframe src="https://player.vimeo.com/video/36867236?color=fcfcfc&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  <iframe src="{{ page.video-url }}" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </section>
 
 <section class="grid">
@@ -60,12 +60,13 @@ layout: default
       <h2>More</h2>
     </div>
 
-    {% for object in site.videos %}
+    {% for object in site.posts %}
     <div class="col-3">
       <iframe src=" {{ object.video-url }}" width="250" height="150" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
       <h3>{{ object.name }}</h3>
       <h4>by {{ object.author }}</h4>
+      <a href="{{object.url}}"> read more</a>
     </div>
     {% endfor %}
 
