@@ -3,16 +3,10 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-
-
-
+  border: 1px solid pink;
 }
 
 
-
-body{
-
-}
 
 
 h1, h2, h3, h4 {
@@ -42,10 +36,6 @@ p{
   font-family: didact gothic;
 }
 
-.logo img {
-  width: 100px;
-}
-
 
 a{
   font-family: didact gothic;
@@ -55,10 +45,15 @@ i{
 
 }
 
-nav{
-
+/* NAVIGATION */
+.logo img{
+  width: 150px;
 }
-
+div.logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 button{
 
@@ -127,8 +122,8 @@ header,h1{
 /*PAGE FILM*/
 
 .video-project{
-  font-size: 140%;
-  padding-left: 5rem;
+  font-size: 2rem;
+  /* padding-left: 5rem; */
 }
 
 .filmtop{
