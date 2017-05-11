@@ -45,20 +45,43 @@ i{
 
 }
 
-/* NAVIGATION */
-.logo img{
-  width: 150px;
-}
-div.logo{
-  display: flex;
+/*      helper      */
+.flex-center {
+  display:flex !important;
   align-items: center;
   justify-content: center;
+  padding: 1%;
 }
+
+.center{
+  text-align: center;
+}
+
+
+/* NAVIGATION */
+
+.logo img{
+  width: 200px;
+}
+
 
 button{
 
 }
 
+/* MENU */
+
+.menu{
+  background-color: black;
+}
+
+.menublock{
+  padding: 5%;
+}
+
+.menucontent{
+  background-color: white;
+}
 
 
 /*HEADER*/
@@ -76,6 +99,8 @@ header,h1{
   font-size: 166%;
   font-family: Libre Baskerville;
 }
+
+
 
 /*PAGE HOME*/
    /*BOX LEFT*/
