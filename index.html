@@ -1,9 +1,10 @@
 ---
 layout: default
-featured-videos:
-  - video-url: https://player.vimeo.com/video/179134723?badge=0
-    name: This is a name
-    author: This is the author
+
+featured:
+  - title: Perdiz Magazine
+    Author: Querida Estudio
+    Description: The new issue is full of incredible stories, photography, and characters.
 ---
   <!-- HEADER -->
   <header class="home">
@@ -40,11 +41,11 @@ featured-videos:
       </div>
       <div class="featured-right col-6">
       </div>
-        {%  for post in site.post %}
+        {%  for thing in page.featured %}
           <div class="box2 col-6">
-            <h3>{{post.title}}</h3>
-            <h4>by {{post.author}}</h4>
-            <p>{{post.description}}
+            <h3>{{thing.name}}</h3>
+            <h4>by {{thing.author}}</h4>
+            <p>{{thing.description}}
             </p>
           </div>
         {% endfor %}
@@ -69,13 +70,14 @@ featured-videos:
     <div class="col-12">
       <h2>Our favourite films</h2>
     </div>
-    {% for object in page.featured-videos %}
+    {% for object in site.posts %}
     <div class="col-3">
       <iframe src=" {{ object.video-url }}" width="250" height="150" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
       <h3>{{ object.name }}</h3>
       <h4>by {{ object.author }}</h4>
+      <a href="{{object.url}}"> read more</a>
     </div>
     {% endfor %}
-  
+
   </section>

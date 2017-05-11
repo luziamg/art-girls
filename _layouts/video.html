@@ -1,21 +1,23 @@
 ---
 layout: default
 ---
-<h2>Film</h2>
+
+<h2 class="filmtop">Film</h2>
 <!-- VIDEO MAIN -->
 <section class="videomain">
-  <img src="http://placehold.it/750x380" />
+  <iframe src="https://player.vimeo.com/video/36867236?color=fcfcfc&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </section>
 
 <section class="grid">
 
   <!-- PROJECT DESCRIPTION -->
   <div class="col-8">
-    <h1 class="video-project">Name of video project
-      <div class="artist-name-video-page">Name of artist</div>
+    <h1 class="video-project">{{ page.name }}
+      <div class="artist-name-video-page">{{ page.author }}</div>
     </h1>
 
-    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+    <p>
+      {{ content }}
     </p>
   </div>
 
@@ -25,15 +27,20 @@ layout: default
     <div class="col-12">
       <h2>Latest</h2>
     </div>
+    {% for vid in site.videos limit:2 %}
+    <a href="{{vid.url}}">
     <div class="box1 col-7">
-      <img src="http://placehold.it/250x120" />
+      {{ vid.vimeo }}
     </div>
 
     <div class="box2 col-5">
-      <h3>Name of the piece</h3>
-      <h4>Author</h4>
+      <h3>{{ vid.name }}</h3>
+      <h4>{{ vid.author }}</h4>
     </div>
+    </a>
+{% endfor %}
 
+<!--
     <div class="box1 col-7">
       <img src="http://placehold.it/250x120" />
     </div>
@@ -43,7 +50,7 @@ layout: default
       <h4>Author</h4>
     </div>
   </div>
-
+ -->
 </section>
 
 <!-- MORE VIDEOS BOTTOM -->
@@ -52,7 +59,17 @@ layout: default
     <div class="col-12">
       <h2>More</h2>
     </div>
+
+    {% for object in site.videos %}
     <div class="col-3">
+      <iframe src=" {{ object.video-url }}" width="250" height="150" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+      <h3>{{ object.name }}</h3>
+      <h4>by {{ object.author }}</h4>
+    </div>
+    {% endfor %}
+
+    <!-- <div class="col-3">
       <img src="http://placehold.it/250x150" />
       <h3>Name of the piece</h3>
       <h4>Name of the artist</h4>
@@ -71,5 +88,5 @@ layout: default
       <img src="http://placehold.it/250x150" />
       <h3>Name of the piece</h3>
       <h4>Name of the artist</h4>
-    </div>
+    </div> -->
   </section>
