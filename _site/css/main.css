@@ -1,0 +1,163 @@
+/*GENERAL*/
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+
+}
+
+
+
+body{
+
+}
+
+
+h1, h2, h3, h4 {
+  font-family: hind;
+}
+
+h1{
+  font-size: 160%;
+  font-stretch: expanded;
+}
+
+h2{
+  font-weight: lighter;
+  font-size: 160%;
+}
+
+h3{
+  font-weight: 300;
+  font-size: 140%;
+}
+
+h4{
+  font-weight: bold;
+}
+
+p{
+  font-family: didact gothic;
+}
+
+
+a{
+  font-family: didact gothic;
+}
+
+i{
+
+}
+
+nav{
+
+}
+
+nav a{
+
+}
+
+button{
+
+}
+
+
+
+/*HEADER*/
+.home{
+  height: 13vh;
+  background-image: url("../images/header_bkg.png");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #fafafa;
+  margin-bottom: 2%;
+  padding-top: 2%;
+}
+header,h1{
+  font-size: 166%;
+  font-family: Libre Baskerville;
+}
+
+/*PAGE HOME*/
+   /*BOX LEFT*/
+.featured1{
+  padding:2%;
+}
+.featured-left-box1{
+  height: 50vh;
+  background-image: url(http://marmartin.es/content/4.proyectos/08.Dystopia/25.jpg);
+  background-size: cover;
+  background-position: middle;
+}
+
+  /*BOX RIGHT*/
+.featured2{
+  padding:2%;
+}
+
+.featured-right{
+  height: 25vh;
+  background-image:url("../images/querida-perdiz.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-bottom:1%;
+}
+
+.home-box1{
+  height: 25vh;
+  background-image:url("../images/sharmila.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 2%;
+}
+
+  /*BOX BOTTOM*/
+
+.featured3{
+  padding:2%;
+  border-top: 5px double #8ca6ef;
+}
+
+  /*FEATURED VIDEOS*/
+
+
+/*PAGE ABOUT*/
+.about{
+  height: 20vh;
+  background-image: url("../images/about.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/*PAGE FILM*/
+h1 .video-project{
+  font-size: 140%;
+}
+.artist-name-video-page{
+  font-size: 110%;
+}
+
+/*THIS IS A SECTION*/
+
+
+/*FOOTER*/
+.footer{
+  padding-left:6%;
+  background-color: #89ffde;
+  padding: 2% 2% 0 0;
+}
+.footer a, i{
+  color: #9052fd;
+  text-decoration: none;
+}
+.footer i{
+  font-size: 32px;
+  text-align: right;
+}
+.footer a:hover{
+  font-weight: bold;
+  color: orange;
+  transition: 2s;
+}

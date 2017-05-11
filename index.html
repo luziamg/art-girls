@@ -1,0 +1,88 @@
+---
+layout: default
+---
+  <!-- HEADER -->
+  <header class="home">
+    <h1>
+      <div>KUNST GIRLS</div>
+    </h1>
+    <!-- remeber the image -->
+  </header>
+
+  <!-- FEATURED SECTIONS TOP -->
+
+  <section class="grid">
+
+    <div class="featured1 col-8 grid-top">
+      <div class="col-12">
+        <h2>Featured photographer</h2>
+      </div>
+      <!-- FEATURED BOX LEFT -->
+      <div class="featured-left-box1 col-7">
+      </div>
+
+      <div class="box2 col-5">
+        <h3>Dystopia</h3>
+        <h4>by Mar Martin</h4>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+        </p>
+      </div>
+    </div>
+
+    <!-- FEATURED BOX RIGHT -->
+    <div class="featured2 col-4 grid">
+      <div class="col-12">
+        <h2>Latest aditions</h2>
+      </div>
+      <div class="featured-right col-6">
+      </div>
+        {%  for post in site.post %}
+          <div class="box2 col-6">
+            <h3>{{post.title}}</h3>
+            <h4>by {{post.author}}</h4>
+            <p>{{post.description}}
+            </p>
+          </div>
+        {% endfor %}
+      <!--
+      <!-- RIGHT SECOND BOX -->
+      <div class="home-box1 col-6">
+      </div>
+
+      <div class="home-box2 col-6">
+        <h3>Bone Jelly</h3>
+        <h4>by Sharmila Banerjee</h4>
+        <p>One panel of the comic strip for the comic series 'Girlie'.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FEATURED BOTTOM -->
+
+  <section class="featured3 grid">
+    <div class="col-12">
+      <h2>Our favourite films</h2>
+    </div>
+    <div class="col-3">
+      <img src="http://placehold.it/250x150" />
+      <h3>Name of the piece</h3>
+      <h4>Name of the artist</h4>
+    </div>
+    <div class="col-3">
+      <img src="http://placehold.it/250x150" />
+      <h3>Name of the piece</h3>
+      <h4>Name of the artist</h4>
+    </div>
+    <div class="col-3">
+      <img src="http://placehold.it/250x150" />
+      <h3>Name of the piece</h3>
+      <h4>Name of the artist</h4>
+    </div>
+    <div class="col-3">
+      <img src="http://placehold.it/250x150" />
+      <h3>Name of the piece</h3>
+      <h4>Name of the artist</h4>
+    </div>
+  </section>
