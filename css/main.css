@@ -220,7 +220,7 @@ header,h1{
   /*BOX RIGHT*/
 .featured2{
   padding:2%;
-  background-color: #F0F3BD;
+  border-left: 1px solid black;
 }
 
 .featured-right{
@@ -250,7 +250,7 @@ header,h1{
 
 .featured3{
   padding:2%;
-  border-top: 5px double #8ca6ef;
+  background-color: #F0F3BD;
   text-align: center;
 }
 
@@ -259,8 +259,8 @@ header,h1{
   padding-left: 2%;
 }
 .work{
-  width: 200px;
-  height:150px;
+  width: 300px;
+  height:240px;
   background-size: cover;
   background-position: center;
   display: inline-block;
@@ -280,17 +280,56 @@ header,h1{
 .morework h2{
   padding-bottom: 2%;
 }
+
+.morework h3{
+  font-size: 1.4rem;
+}
+
+
 .morework1{
   background-image: url("/images/mar-martin02.jpg");
+  position: relative;
+}
+
+
+.morework1 div{
+  background-color: white;
+  border: 1.5px solid black;
+  padding: 2%;
+  position: absolute;
+  bottom: -15px;
+  width: 80%;
+  margin: 0 8%;
 }
 .morework2{
   background-image: url("/images/mar-martin03.jpg");
+  position: relative;
 }
+.morework2 div{
+  background-color: white;
+  border: 1.5px solid black;
+  padding: 2%;
+  position: absolute;
+  bottom: -15px;
+  width: 80%;
+  margin: 0 8%;
+}
+
 .morework3{
   background-image: url("/images/mar-martin04.jpg");
 }
+
 .morework4{
   background-image: url("/images/mar-martin05.jpg");
+}
+.morework4 div{
+  background-color: white;
+  border: 1.5px solid black;
+  padding: 2%;
+  position: absolute;
+  bottom: -15px;
+  width: 80%;
+  margin: 0 8%;
 }
 
 /*PAGE FILM*/
@@ -409,5 +448,5 @@ header,h1{
 
 .aboutfooter{
   font-size: 1.5rem;
-
 }
+}}
