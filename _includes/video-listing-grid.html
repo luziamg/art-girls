@@ -1,0 +1,15 @@
+<section class="featured3 grid">
+  <div class="col-12">
+    <h2>More</h2>
+  </div>
+
+  {% for object in site.posts %}
+  <div class="col-3">
+    <iframe src=" {{ object.video-url }}" width="250" height="150" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+    <h3>{{ object.name }}</h3>
+    <h4>by {{ object.author }}</h4>
+    <a href="{{object.url}}"> read more</a>
+  </div>
+  {% endfor %}
+</section>

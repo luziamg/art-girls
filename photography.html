@@ -1,6 +1,8 @@
 ---
 layout: default
-  morepictures:
+morepictures:
+  - link: /images/mar-martin02.jpg
+    piece: Test
 ---
 <section class="photopage grid">
   <h2>Photography</h2>
@@ -10,11 +12,11 @@ layout: default
 <!-- MAIN PHOTO SECTION -->
 <section class="photomain grid">
   <div class="workmain col-6">
-    <img src="/images/mar-martin-big.jpg">
+    <img src="{{ site.photos.last.photo-url }}">
   </div>
   <div class="photoname col-6">
-    <h1 class="photo-project">A.L.M.A.
-      <div class="namephoto">Mar Martin</div>
+    <h1 class="photo-project">{{ site.photos.last.title }}
+      <div class="namephoto">{{ site.photos.last.author }}</div>
     </h1>
 
     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
@@ -27,10 +29,10 @@ layout: default
 
   <h2 class="col-12">More pictures</h2>
 
-  {% for morepictures in site.photography limit: 4 %}
-  
+  {% for morepictures in page.photography limit: 4 %}
+
   <div class="col-3">
-    <div class="morework1 work">
+    <div class="morework1 work" style= "background-image:url('{{photo.link}}')">
       <div>
         <h3>Name of the piece</h3>
       </div>
@@ -40,11 +42,12 @@ layout: default
   <div class="col-3">
     <div class="morework2 work">
       <div>
-        <h3>Name of the piece</h3>
+        <h3>{{ photo.piece }}</h3>
       </div>
     </div>
+  {% endfor %}
 
-  </div>
+  <!-- </div>
   <div class="col-3">
     <div class="morework3 work">
       <div>
@@ -59,5 +62,5 @@ layout: default
       </div>
     </div>
 
-  </div>
+  </div> -->
 </section>

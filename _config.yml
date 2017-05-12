@@ -2,9 +2,9 @@ collections:
   videos:
     output: true
     permalink: /videos/:path/
-  photography:
+  photos:
     output: true
-    permalink: /photography/:path/
+    permalink: /photos/:path/
   design:
     output: true
     permalink: /design/:path/

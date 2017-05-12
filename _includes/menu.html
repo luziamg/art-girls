@@ -4,12 +4,13 @@
   <section class="top grid">
 
     <!-- BOX TOP LEFT -->
-    <div class="leftbox col-8 grid enter-stage-right stage-right menublock">
+    <!-- you have to change the div for a h ref to link the element to the new page -->
+    <a href="/videos.html" class="leftbox col-8 grid enter-stage-right stage-right menublock">
       <div class="col-7 menucontent">
-        <!-- Jekyll here this video has to change -->
-        <img src="https://unsplash.it/200/150/?random"/>
+        <iframe src=" {{ site.videos.last.video-url }}" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
-      <div class="col-1 menucontent flex-center"><h2 class="rotate-text">Film</h2>
+      <div class="col-1 menucontent flex-center">
+        <h2 class="rotate-text">Film</h2>
       </div>
       <div class="col-4 menucontent">
         <h3>Name of the video</h3>
@@ -18,7 +19,7 @@
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.
         </p>
       </div>
-    </div>
+    </a>
 
   <!-- BOX TOP RIGHT  -->
     <div class="righttbox col-4 enter-stage-left stage-left menublock center">

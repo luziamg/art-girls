@@ -1,14 +1,6 @@
 ---
 layout: default
 ---
-<!-- TO DO
-- Talk with Monkey Dan about Jekyll
-    WHYYYYYYY is there content in the project description? Where does it come from?
-  -for Project Description, make column the same width as video player
-  Look up video Player width, and align. text should be left aligned with left side of player
-      google online pixel to percentage calculator, plug in 640 pixels, and set column width to that.
--->
-
 <h2 class="filmtop">Film</h2>
 <!-- VIDEO MAIN -->
 <section class="videomain">
@@ -16,7 +8,6 @@ layout: default
 </section>
 
 <section class="grid-center">
-
   <!-- PROJECT DESCRIPTION -->
   <div class="video-project col-5">
     <h1 class>{{ page.name }}
@@ -27,45 +18,7 @@ layout: default
     </p>
   </div>
 
-  <!-- LATEST VIDEOS REMOVED BY MANDY-->
-
 </section>
 
 <!-- MORE VIDEOS BOTTOM -->
-
-  <section class="featured3 grid">
-    <div class="col-12">
-      <h2>More</h2>
-    </div>
-
-    {% for object in site.posts %}
-    <div class="col-3">
-      <iframe src=" {{ object.video-url }}" width="250" height="150" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-      <h3>{{ object.name }}</h3>
-      <h4>by {{ object.author }}</h4>
-      <a href="{{object.url}}"> read more</a>
-    </div>
-    {% endfor %}
-
-    <!-- <div class="col-3">
-      <img src="http://placehold.it/250x150" />
-      <h3>Name of the piece</h3>
-      <h4>Name of the artist</h4>
-    </div>
-    <div class="col-3">
-      <img src="http://placehold.it/250x150" />
-      <h3>Name of the piece</h3>
-      <h4>Name of the artist</h4>
-    </div>
-    <div class="col-3">
-      <img src="http://placehold.it/250x150" />
-      <h3>Name of the piece</h3>
-      <h4>Name of the artist</h4>
-    </div>
-    <div class="col-3">
-      <img src="http://placehold.it/250x150" />
-      <h3>Name of the piece</h3>
-      <h4>Name of the artist</h4>
-    </div> -->
-  </section>
+{% include video-listing-grid.html %}

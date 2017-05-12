@@ -35,12 +35,13 @@
   <section class="top grid">
 
     <!-- BOX TOP LEFT -->
-    <div class="leftbox col-8 grid enter-stage-right stage-right menublock">
+    <!-- you have to change the div for a h ref to link the element to the new page -->
+    <a href="/videos.html" class="leftbox col-8 grid enter-stage-right stage-right menublock">
       <div class="col-7 menucontent">
-        <!-- Jekyll here this video has to change -->
-        <img src="https://unsplash.it/200/150/?random"/>
+        <iframe src=" https://player.vimeo.com/video/169211901" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
-      <div class="col-1 menucontent flex-center"><h2 class="rotate-text">Film</h2>
+      <div class="col-1 menucontent flex-center">
+        <h2 class="rotate-text">Film</h2>
       </div>
       <div class="col-4 menucontent">
         <h3>Name of the video</h3>
@@ -49,7 +50,7 @@
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.
         </p>
       </div>
-    </div>
+    </a>
 
   <!-- BOX TOP RIGHT  -->
     <div class="righttbox col-4 enter-stage-left stage-left menublock center">
@@ -100,22 +101,13 @@
 
 <div class="headerfix">
 
-   <!-- TO DO
-- Talk with Monkey Dan about Jekyll
-    WHYYYYYYY is there content in the project description? Where does it come from?
-  -for Project Description, make column the same width as video player
-  Look up video Player width, and align. text should be left aligned with left side of player
-      google online pixel to percentage calculator, plug in 640 pixels, and set column width to that.
--->
-
-<h2 class="filmtop">Film</h2>
+   <h2 class="filmtop">Film</h2>
 <!-- VIDEO MAIN -->
 <section class="videomain">
   <iframe src="https://player.vimeo.com/video/192120380" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </section>
 
 <section class="grid-center">
-
   <!-- PROJECT DESCRIPTION -->
   <div class="video-project col-5">
     <h1 class>Anna Bonnie, Singular
@@ -126,72 +118,49 @@
     </p>
   </div>
 
-  <!-- LATEST VIDEOS REMOVED BY MANDY-->
-
 </section>
 
 <!-- MORE VIDEOS BOTTOM -->
+<section class="featured3 grid">
+  <div class="col-12">
+    <h2>More</h2>
+  </div>
 
-  <section class="featured3 grid">
-    <div class="col-12">
-      <h2>More</h2>
-    </div>
+  
+  <div class="col-3">
+    <iframe src=" https://player.vimeo.com/video/36867236" width="250" height="150" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-    
-    <div class="col-3">
-      <iframe src=" https://player.vimeo.com/video/36867236" width="250" height="150" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <h3>Mint Julep, Aviary</h3>
+    <h4>by A Nice Idea Everyday</h4>
+    <a href="/2017/05/08/panama.html"> read more</a>
+  </div>
+  
+  <div class="col-3">
+    <iframe src=" https://player.vimeo.com/video/216544137" width="250" height="150" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-      <h3>Mint Julep, Aviary</h3>
-      <h4>by A Nice Idea Everyday</h4>
-      <a href="/2017/05/08/panama.html"> read more</a>
-    </div>
-    
-    <div class="col-3">
-      <iframe src=" https://player.vimeo.com/video/216544137" width="250" height="150" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <h3>Repeat</h3>
+    <h4>by Jane Doe</h4>
+    <a href="/2017/05/06/panama2.html"> read more</a>
+  </div>
+  
+  <div class="col-3">
+    <iframe src=" https://player.vimeo.com/video/169211901" width="250" height="150" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-      <h3>Repeat</h3>
-      <h4>by Jane Doe</h4>
-      <a href="/2017/05/06/panama2.html"> read more</a>
-    </div>
-    
-    <div class="col-3">
-      <iframe src=" https://player.vimeo.com/video/169211901" width="250" height="150" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <h3>Shura, What's going on</h3>
+    <h4>by Chloe Wallace</h4>
+    <a href="/2017/05/04/panama3.html"> read more</a>
+  </div>
+  
+  <div class="col-3">
+    <iframe src=" https://player.vimeo.com/video/192120380" width="250" height="150" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-      <h3>Shura, What's going on</h3>
-      <h4>by Chloe Wallace</h4>
-      <a href="/2017/05/04/panama3.html"> read more</a>
-    </div>
-    
-    <div class="col-3">
-      <iframe src=" https://player.vimeo.com/video/192120380" width="250" height="150" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <h3>Anna Bonnie, Singular</h3>
+    <h4>by Lane Casting</h4>
+    <a href="/2017/04/02/panama4.html"> read more</a>
+  </div>
+  
+</section>
 
-      <h3>Anna Bonnie, Singular</h3>
-      <h4>by Lane Casting</h4>
-      <a href="/2017/04/02/panama4.html"> read more</a>
-    </div>
-    
-
-    <!-- <div class="col-3">
-      <img src="http://placehold.it/250x150" />
-      <h3>Name of the piece</h3>
-      <h4>Name of the artist</h4>
-    </div>
-    <div class="col-3">
-      <img src="http://placehold.it/250x150" />
-      <h3>Name of the piece</h3>
-      <h4>Name of the artist</h4>
-    </div>
-    <div class="col-3">
-      <img src="http://placehold.it/250x150" />
-      <h3>Name of the piece</h3>
-      <h4>Name of the artist</h4>
-    </div>
-    <div class="col-3">
-      <img src="http://placehold.it/250x150" />
-      <h3>Name of the piece</h3>
-      <h4>Name of the artist</h4>
-    </div> -->
-  </section>
 
 
 

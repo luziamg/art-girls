@@ -1,16 +1,23 @@
 ---
-layout: video
+layout: default
 ---
+<h2 class="filmtop">Film</h2>
+<!-- VIDEO MAIN -->
+<section class="videomain">
+  <iframe src="{{ site.videos.last.video-url }}" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen  allowfullscreen></iframe>
+</section>
 
-<h1>Videos</h1>
+<section class="grid-center">
+  <!-- PROJECT DESCRIPTION -->
+  <div class="video-project col-5">
+    <h1 class>{{ site.videos.last.name }}
+      <div class="artist-name-video-page">{{ site.videos.last.author }}</div>
+    </h1>
+    <p>
+      {{ site.videos.last.content }}
+    </p>
+  </div>
 
-{% for video in site.videos %}
-<div class="col-3">
-  <iframe src=" {{ video.video-url }}" width="250" height="150" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</section>
 
-  <h3>{{ video.name }}</h3>
-  <h4>by {{ video.author }}</h4>
-  <a href="{{video.url}}"> read more</a>
-</div>
-
-{% endfor %}
+{% include video-listing-grid.html %}
