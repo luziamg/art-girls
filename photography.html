@@ -16,11 +16,10 @@ morepictures:
   </div>
   <div class="photoname col-6">
     <h1 class="photo-project">{{ site.photos.last.title }}
-      <div class="namephoto">{{ site.photos.last.author }}</div>
+      <div class="namephoto">{{ site.photos.last.artist }}</div>
     </h1>
 
-    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-    </p>
+    <p>{{ site.photos.last.content }}</p>
     </div>
 </section>
 
@@ -29,38 +28,15 @@ morepictures:
 
   <h2 class="col-12">More pictures</h2>
 
-  {% for morepictures in page.photography limit: 4 %}
+  {% for photo in site.photos limit: 4 %}
 
   <div class="col-3">
-    <div class="morework1 work" style= "background-image:url('{{photo.link}}')">
+    <div class="morework1 work" style= "background-image:url('{{photo.photo-url}}')">
       <div>
-        <h3>Name of the piece</h3>
+        <h3>{{photo.title}}</h3>
       </div>
     </div>
-
   </div>
-  <div class="col-3">
-    <div class="morework2 work">
-      <div>
-        <h3>{{ photo.piece }}</h3>
-      </div>
-    </div>
   {% endfor %}
 
-  <!-- </div>
-  <div class="col-3">
-    <div class="morework3 work">
-      <div>
-        <h3>Name of the piece</h3>
-      </div>
-    </div>
-  </div>
-  <div class="col-3">
-    <div class="morework4 work">
-      <div>
-        <h3>Name of the piece</h3>
-      </div>
-    </div>
-
-  </div> -->
 </section>

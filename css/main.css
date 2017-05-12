@@ -6,6 +6,7 @@
 
   -webkit-transition: 2s;
   transition:2s;
+  max-width: 100%;
 }
 
 [class*=grid]{
