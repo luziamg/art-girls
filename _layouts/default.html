@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Kunst Girls</title>
+  <title>Feminized</title>
 
   <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Hind|Libre+Baskerville" rel="stylesheet">
 
@@ -15,8 +15,13 @@
 
 <body>
   <!-- NAVIGATION -->
+
   <nav class="navigation grid">
-    <div class="menubutton col-1 flex-center">Menu</div>
+    <div class="menubutton col-1 flex-center">
+      <span>Menu</span>
+      <span class="hidden lighttext">Close</span>
+
+    </div>
 
     <div class="logo col-10 flex-center" ><img src="/images/feminized-logo.jpg" alt=""></div>
 
@@ -25,8 +30,11 @@
     </div>
   </nav>
 
+    {% include menu.html %}
 
- {{ content }}
+<div class="headerfix">
+
+   {{ content }}
 
 
 
@@ -62,6 +70,8 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="/js/main.js"></script>
+
+  </div>
 
 </body>
 </html>
