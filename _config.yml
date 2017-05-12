@@ -1,0 +1,16 @@
+collections:
+  videos:
+    output: true
+    permalink: /videos/:path/
+  photography:
+    output: true
+    permalink: /photography/:path/
+  design:
+    output: true
+    permalink: /design/:path/
+  art:
+    output: true
+    permalink: /art/:path/
+  events:
+    output: true
+    permalink: /events/:path/

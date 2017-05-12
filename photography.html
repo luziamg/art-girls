@@ -1,5 +1,6 @@
 ---
 layout: default
+  morepictures:
 ---
 <section class="photopage grid">
   <h2>Photography</h2>
@@ -8,12 +9,12 @@ layout: default
 
 <!-- MAIN PHOTO SECTION -->
 <section class="photomain grid">
-  <div class="workmain col-5">
+  <div class="workmain col-6">
     <img src="/images/mar-martin-big.jpg">
   </div>
-  <div class="photo main name col-5">
+  <div class="photoname col-6">
     <h1 class="photo-project">A.L.M.A.
-      <div class="artist-name-photo-page">Mar Martin</div>
+      <div class="namephoto">Mar Martin</div>
     </h1>
 
     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
@@ -23,7 +24,11 @@ layout: default
 
 <!-- MORE WORK -->
 <section class="morework grid">
+
   <h2 class="col-12">More pictures</h2>
+
+  {% for morepictures in site.photography limit: 4 %}
+  
   <div class="col-3">
     <div class="morework1 work">
       <div>

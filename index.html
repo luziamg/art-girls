@@ -75,7 +75,9 @@ featured:
     <div class="col-12">
       <h2>Our favourite films</h2>
     </div>
-    {% for object in site.posts %}
+
+    {% for object in site.videos limit: 4 %}
+
     <div class="col-3">
       <iframe src=" {{ object.video-url }}" width="250" height="150" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 

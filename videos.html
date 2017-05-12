@@ -1,0 +1,16 @@
+---
+layout: video
+---
+
+<h1>Videos</h1>
+
+{% for video in site.videos %}
+<div class="col-3">
+  <iframe src=" {{ video.video-url }}" width="250" height="150" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+  <h3>{{ video.name }}</h3>
+  <h4>by {{ video.author }}</h4>
+  <a href="{{video.url}}"> read more</a>
+</div>
+
+{% endfor %}
