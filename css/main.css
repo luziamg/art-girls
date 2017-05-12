@@ -3,7 +3,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  border: 1px solid pink;
+
   -webkit-transition: 2s;
   transition:2s;
 }
@@ -12,25 +12,29 @@
   margin: 0;
 }
 
-
+[class*=col-], [class^=col] {
+  padding: 0;
+}
 
 h1, h2, h3, h4 {
-  font-family: hind;
+  font-family: sans-serif;
 }
 
 h1{
-  font-size: 160%;
+  font-size: 1.6rem;
   font-stretch: expanded;
+  font-family: sans-serif;
 }
 
 h2{
   font-weight: lighter;
-  font-size: 160%;
+  font-size: 2rem;
+  padding-bottom: 1%;
 }
 
 h3{
   font-weight: 300;
-  font-size: 140%;
+  font-size: 1.8rem;
 }
 
 h4{
@@ -38,17 +42,19 @@ h4{
 }
 
 p{
-  font-family: didact gothic;
+  font-family: serif;
+  font-size: 1.2rem;
 }
 
 
 a{
-  font-family: didact gothic;
+  font-family: serif;
   text-decoration: none;
   color: black;
 }
 
 i{
+  paddin: .5rem;
 
 }
 
@@ -82,7 +88,7 @@ i{
 }
 
 .lighttext{
-  color:beige;
+  color:#9052fd;
 }
 
 /* NAVIGATION */
@@ -95,10 +101,16 @@ nav .flex-center{
   padding:0.4% 0;
 }
 
-
-button{
-
+.menubutton{
+  font-size: 1.8rem;
+  font-family: hind;
 }
+
+.topicons{
+  font-size: 1.8rem
+}
+
+
 
 /* MENU */
 
@@ -109,9 +121,10 @@ button{
 }
 
 .menu{
-  position: fixed;
-  bottom:0;
+  /*position: fixed;
+  bottom:0;*/
   display: none;
+  padding: 2%;
   background-color: black;
 }
 
@@ -123,7 +136,7 @@ button{
 }
 
 .menublock{
-  padding:2% 5%;
+  padding:3%;
   -webkit-transition: 2s;
   transition:2s;
 }
@@ -173,20 +186,22 @@ button{
 }
 header,h1{
   font-size: 166%;
-  font-family: Libre Baskerville;
+  font-family: sans-serif;
 }
 
 .headerfix{
-  padding-top: 1.5%;
+  padding-top: 3.5%;
 }
 
 
 
 /*PAGE HOME*/
+
    /*BOX LEFT*/
 .featured1{
   padding:2%;
 }
+
 .featured-left-box1{
   height: 50vh;
   background-image: url(http://marmartin.es/content/4.proyectos/08.Dystopia/25.jpg);
@@ -194,9 +209,18 @@ header,h1{
   background-position: middle;
 }
 
+.box2main{
+  padding:0 1%;
+}
+
+.box2main h3, h4, p{
+  padding-top: 2%;
+}
+
   /*BOX RIGHT*/
 .featured2{
   padding:2%;
+  background-color: #F0F3BD;
 }
 
 .featured-right{
@@ -204,6 +228,14 @@ header,h1{
   background-size: cover;
   background-position: center;
   margin-bottom:1%;
+}
+
+.box2{
+  padding:0 1%;
+}
+
+.box2 h3, h4, p{
+  padding-top: 2%;
 }
 
 .home-box1{
@@ -219,17 +251,58 @@ header,h1{
 .featured3{
   padding:2%;
   border-top: 5px double #8ca6ef;
+  text-align: center;
 }
 
 /*PAGE PHOTOGRAPHY*/
+.photopage{
+  padding-left: 2%;
+}
+.work{
+  width: 200px;
+  height:150px;
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+}
 
+.workmain{
+  width:780px;
+  padding-left: 2%;
+}
+
+.morework{
+  padding:2%;
+  margin: 2% 0;
+  text-align: center;
+}
+
+.morework h2{
+  padding-bottom: 2%;
+}
+.morework1{
+  background-image: url("/images/mar-martin02.jpg");
+}
+.morework2{
+  background-image: url("/images/mar-martin03.jpg");
+}
+.morework3{
+  background-image: url("/images/mar-martin04.jpg");
+}
+.morework4{
+  background-image: url("/images/mar-martin05.jpg");
+}
 
 /*PAGE FILM*/
 
 .video-project{
-  font-size: 2rem;
-  /* padding-left: 5rem; */
+  min-width: 640px;
+  font-size: 1.3rem;
+  text-align: left;
+  padding-bottom: 3%;
+  padding-top:1%;
 }
+
 
 .filmtop{
   text-align: center;
@@ -256,7 +329,8 @@ header,h1{
 /*PAGE ABOUT*/
 
 .header-about{
-  margin:2%;
+  margin:0 2% 2%;
+  text-align: center;
 }
   /*image*/
 
@@ -279,16 +353,26 @@ header,h1{
 }
   /*MANIFESTO*/
 .quote{
+  font-family: serif;
   font-size:140%;
   font-weight:bold;
   padding-right: 2%;
+  text-align: justify;
+  line-height: 2rem;
 }
 .quote i{
   color: #333333;
   font-size: 2rem;
 }
+
+.quote span{
+  color:#ff6627;
+}
 .manifesto{
+  font-family: serif;
   font-size: 140%;
+  text-align: justify;
+  line-height: 2rem;
 }
 
 
@@ -310,23 +394,20 @@ header,h1{
 }
 .contact{
   text-align: center;
-  padding-top: .4rem;
 }
 .footer i{
   font-size: 32px;
   text-align: right;
-  padding-right: .5rem;
+  padding-right: 1rem;
 }
 
 .footer a:hover{
   font-weight: bold;
-  color: orange;
-  -webkit-transition: 2s;
-  transition: 2s;
+  color: #ff6627;
+  -webkit-transition: 1s;
 }
 
 .aboutfooter{
-
-}
+  font-size: 1.5rem;
 
 }
