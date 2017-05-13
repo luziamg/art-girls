@@ -457,8 +457,10 @@ header,h1{
 /*FOOTER*/
 .footer{
   background-color: #89ffde;
-  padding-left: 1%;
-  padding-top: .4rem;
+  padding-left: 2.5%;
+  padding-right:4%;
+  padding-top: 1rem;
+  padding-bottom: 0.5%;
 }
 
 .footer a{
@@ -467,24 +469,24 @@ header,h1{
 
 }
 .contact{
-  text-align: center;
+  text-align: right;
 }
 .footer i{
   font-size: 32px;
-  text-align: right;
-  padding-right: 1rem;
   color: #9052fd;
   text-decoration: none;
+  padding: 0 2%;
+}
+
+.footer i:hover{
+  color: #ff6627;
 }
 
 .footer a:hover{
-  font-weight: bold;
   color: #ff6627;
   -webkit-transition: 1s;
 }
 
 .aboutfooter{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
-}
-}}
