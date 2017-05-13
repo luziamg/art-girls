@@ -396,7 +396,25 @@ header,h1{
 }
 
 
+/* PAGE EVENTS*/
+.event{
+  margin:2%;
+  border-bottom: 1px solid black
+}
 
+.text-event{
+  padding:2%;
+}
+
+.pic-event{
+  min-height: 500px;
+  background-position: center;
+  background-size: cover;
+}
+
+.map-event{
+  padding: 2% 0;
+}
 
 
 

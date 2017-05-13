@@ -12,5 +12,5 @@ collections:
     output: true
     permalink: /art/:path/
   events:
-    output: true
+    output: false
     permalink: /events/:path/
