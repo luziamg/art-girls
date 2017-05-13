@@ -88,6 +88,10 @@ i{
   display:none;
 }
 
+a:hover{
+  color: #ff6627;
+}
+
 .lighttext{
   color:#9052fd;
 }
@@ -133,6 +137,10 @@ nav .flex-center{
   font-family: sans-serif;
 }
 
+.navigation i:hover{
+  color:#ff6627;
+}
+
 .topicons{
   font-size: 1.8rem;
 }
@@ -155,9 +163,6 @@ nav .flex-center{
   background-color: black;
 }
 
-.menu a:hover{
-  color: #ff6627;
-}
 
 .menu.active{
   display: block;
@@ -227,6 +232,7 @@ nav .flex-center{
 header,h1{
   font-size: 166%;
   font-family: sans-serif;
+  font-weight: lighter;
 }
 
 .headerfix{
@@ -466,7 +472,10 @@ header,h1{
 .footer a{
   font-family: sans-serif;
   color: #9052fd;
+}
 
+.footer a:hover{
+  color:#ff6627;
 }
 .contact{
   text-align: right;
@@ -482,10 +491,6 @@ header,h1{
   color: #ff6627;
 }
 
-.footer a:hover{
-  color: #ff6627;
-  -webkit-transition: 1s;
-}
 
 .aboutfooter{
   font-size: 1.2rem;
