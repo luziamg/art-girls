@@ -3,9 +3,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-
-  -webkit-transition: 2s;
-  transition:2s;
+  -webkit-transition: top 2s, bottom 2s, left 2s, right 2s;
+  transition: top 2s, bottom 2s, left 2s, right 2s;
   max-width: 100%;
 }
 
@@ -56,6 +55,7 @@ a{
 
 i{
   paddin: .5rem;
+  color: #9052fd;
 
 }
 
@@ -117,7 +117,7 @@ i{
 /* NAVIGATION */
 
 .logo img{
-  width: 200px;
+  width: 34px;
 }
 
 .navigation{
@@ -134,7 +134,7 @@ nav .flex-center{
 }
 
 .topicons{
-  font-size: 1.8rem
+  font-size: 1.8rem;
 }
 
 
@@ -155,6 +155,10 @@ nav .flex-center{
   background-color: black;
 }
 
+.menu a:hover{
+  color: #ff6627;
+}
+
 .menu.active{
   display: block;
 }
@@ -163,13 +167,22 @@ nav .flex-center{
 }
 
 .menublock{
-  padding:3%;
-  -webkit-transition: 2s;
-  transition:2s;
+  padding:1% 3%;
+  -webkit-transition:  top 2s, bottom 2s, left 2s, right 2s;
+  transition: top 2s, bottom 2s, left 2s, right 2s;
 }
 
 .menucontent{
   background-color: white;
+}
+
+.menuphotography{
+  height: 180px;
+  width: 300px;
+  background-position: center;
+  background-size: cover;
+  margin: auto;
+
 }
 
 .stage-right{
@@ -307,13 +320,20 @@ header,h1{
   padding: 0 8% 0 2%;
 }
 
+.namephoto{
+  font-weight: lighter;
+}
+
 
 
 .morework{
+  position: relative;
   padding:2%;
   margin: 2% 0;
   text-align: left;
   border-top: 1px solid grey;
+  text-align: center;
+  z-index: -1;
 }
 
 .morework h2{
@@ -332,36 +352,6 @@ header,h1{
 
 
 .morework1 div{
-  background-color: white;
-  border: 1.5px solid black;
-  padding: 2%;
-  position: absolute;
-  bottom: -15px;
-  width: 80%;
-  margin: 0 8%;
-}
-.morework2{
-  background-image: url("/images/mar-martin03.jpg");
-  position: relative;
-}
-.morework2 div{
-  background-color: white;
-  border: 1.5px solid black;
-  padding: 2%;
-  position: absolute;
-  bottom: -15px;
-  width: 80%;
-  margin: 0 8%;
-}
-
-.morework3{
-  background-image: url("/images/mar-martin04.jpg");
-}
-
-.morework4{
-  background-image: url("/images/mar-martin05.jpg");
-}
-.morework4 div{
   background-color: white;
   border: 1.5px solid black;
   padding: 2%;
@@ -471,9 +461,10 @@ header,h1{
   padding-top: .4rem;
 }
 
-.footer a, i{
+.footer a{
+  font-family: sans-serif;
   color: #9052fd;
-  text-decoration: none;
+
 }
 .contact{
   text-align: center;
@@ -482,6 +473,8 @@ header,h1{
   font-size: 32px;
   text-align: right;
   padding-right: 1rem;
+  color: #9052fd;
+  text-decoration: none;
 }
 
 .footer a:hover{
@@ -492,5 +485,6 @@ header,h1{
 
 .aboutfooter{
   font-size: 1.5rem;
+}
 }
 }}
